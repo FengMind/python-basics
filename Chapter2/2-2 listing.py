@@ -87,3 +87,34 @@ print("FIFO a:%s"%(a))
 a=['zhang','li','wang','lv','cheng']
 a.remove('zhang')
 print("remove a:%s"%(a))
+# reverse
+a=[1,2,3,4,5,6]
+a.reverse()
+print("reverse a:%s"%(a))
+# sort - asc
+a=[6,3,1,4,2,5]
+a.sort() # 就地升序，并非副本
+print("sort a:%s"%(a))
+b=a.sort() # 这样做是无意义的
+print("sort b:%s"%(b))
+b=a # 地址传递也并非我们所愿
+print("sort b:%s"%(b))
+a=[6,3,1,4,2,5]
+b=a.copy() # 深copy一份
+b.sort()
+print("sort a:%s,b:%s"%(a,b))
+# sorted 副本排序
+a=[6,3,1,4,2,5]
+b=sorted(a) # 实现copy并对副本排序
+print("sort a:%s,b:%s"%(a,b))
+a=sorted('Python') # 可用于任何序列，但总是返回一个列表
+print("sorted作用于任意序列 a:%s"%(a))
+
+# sort - desc
+# 使用reverse()就行
+
+
+
+
+
+
