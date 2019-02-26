@@ -83,3 +83,7 @@ a.insert(0,1)
 a.pop()
 print("FIFO a:%s"%(a))
 # 当然使用a.pop(0)的方式也可实现相反操作
+# remove
+a=['zhang','li','wang','lv','cheng']
+a.remove('zhang')
+print("remove a:%s"%(a))
